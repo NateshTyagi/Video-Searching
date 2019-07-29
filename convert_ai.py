@@ -1,3 +1,4 @@
+#audio transcription using paid cloudinary api with more matn 80% accuracy if you wanna use it
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
