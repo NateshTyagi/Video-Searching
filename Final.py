@@ -54,8 +54,9 @@ for i in glob('*.jpg'):# here datasets is the directory name where all your file
 		print(eachObject["name"] , " : " , eachObject["percentage_probability"] )
         
  
-
-clip = mp.VideoFileClip("ENCOURAGEMENT.mp4").subclip(0,3600)
+starta=input("enter the start time of the video")
+endt=input("enter the end time of video to be clipped")
+clip = mp.VideoFileClip("ENCOURAGEMENT.mp4").subclip(starta,endts)	#encouragement.mp4 is the name of the video file
 clip.audio.write_audiofile("theaudio.wav")
 from os import path
 AUDIO_FILE = path.join(path.dirname(path.realpath(__file__)), "theaudio.wav")
